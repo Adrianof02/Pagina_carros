@@ -28,13 +28,13 @@
 .container {
     display: flex;
     gap: 1rem;
-    padding: 15px;
+    padding: 15px 225px 15px 225px;
 
 
 }
 
-.container img {
-    width: 150px;
+.card img {
+    width: 500px;
     padding: 15px;
     border-radius: 25px;
 }
@@ -55,4 +55,8 @@
 .card h2,
 p {
     color: black;
+    margin-bottom: 20px;
+}
+.card p {
+    font-size: 20px;
 }
