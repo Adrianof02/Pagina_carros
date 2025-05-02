@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+}
+
+#cabecalho {
+    background-color: lightgray;
+    padding: 15px;
+}
+
+.Logo {
+    width: 50px;
+}
+
+#introducao {
+    text-align: center;
+}
+
+#introducao h1 {
+    font-size: 60px;
+}
+
+#introducao p {
+    font-size: 30px;
+    color: #242424;
+}
+
+
+.container {
+    display: flex;
+    gap: 1rem;
+    padding: 15px;
+
+
+}
+
+.container img {
+    width: 150px;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.card {
+    background-color: lightgray;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.card:hover {
+    background-color: blueviolet;
+    padding: 0px;
+}
+
+.card h2,
+p {
+    color: black;
+}
