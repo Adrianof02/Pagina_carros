@@ -15,41 +15,56 @@
     text-align: center;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
 #introducao h1 {
-    font-size: 60px;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 #introducao p {
-    font-size: 30px;
-    color: #242424;
+    font-size: 1.5rem;
+    color: #555;
 }
 
 
 .container {
     display: flex;
     gap: 1rem;
-    padding: 15px 225px 15px 225px;
-
-
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    justify-content: center;
 }
 
 .card img {
     width: 500px;
+    max-width: 300px;
+    object-fit: contain;
+    background-color: #fff;
     padding: 15px;
     border-radius: 25px;
 }
 
 .card {
-    background-color: lightgray;
+    width: 100%;
+    max-width: 500px;
+    background-color: #eaeaea;
     text-align: center;
     padding: 15px;
     border-radius: 20px;
     text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
     background-color: blueviolet;
-    padding: 0px;
+    transform: scale(1.02);
 }
 
 .card h2,
@@ -57,6 +72,21 @@ p {
     color: black;
     margin-bottom: 20px;
 }
+
 .card p {
     font-size: 20px;
+}
+
+@media (max-width:780px) {
+    #introducao h1 {
+        font-size: 2rem;
+    }
+
+    #introducao p {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        max-width: 100%;
+    }
 }
